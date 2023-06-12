@@ -1,7 +1,4 @@
-# From transcriptomics to mechanistic models of signalling
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saezlab/PerMedCoE_tools_virtual_course_2023/blob/main/PerMedCoE_transcriptomics_mechanistic_signaling.ipynb)
-
-This repository contains the material for the [PerMedCoE virtual course: transcriptomics to mechanistic models of signalling](https://permedcoe.eu/training/virtual-course-from-transcriptomics-to-mechanistic-models-of-signalling/). The `PerMedCoE_transcriptomics_mechanistic_signaling.ipynb` notebook included in the repository is self-contained document with explanations and code to run on your own or using Google Colab. The course has an estimated duration of ~3h.
+# PerMedCoE Summer School 2023: From transcriptomics to mechanistic models of signalling
 
 ## Overview
 
@@ -18,20 +15,6 @@ At the end of these sessions, the participants will be able to:
 - Combine these networks with molecular biological activities from experimental data
 - Apply causal reasoning to find the most plausible causal mechanisms that explain the observed activity patterns
 - Use CARNIVAL to customise the contextualisation of signalling networks
-
-## Audience
-Number of participants: 25.
-
-This course is aimed at researchers who work in systems level molecular biology or biomedicine, and are interested in extracting mechanistic insights from transcriptomics data. Pre-requisites:
-
-We expect the participants to have a basic understanding of the following topics: scripting in Python and R, transcriptomics data analysis, molecular networks, constraint-based optimisation.
-The course will be delivered in a Google Colaboratory notebook with the necessary tools pre-installed.
-
-## Registration
-You can apply to the course [here](https://www.eventsforce.net/embl/frontend/reg/thome.csp?pageID=57622&eventID=94&traceRedir=2). Registration is free. Applications are first-come first-served based and we will review applications on a rolling basis to select suitable candidates until the 25 places available are filled. A waiting list will be established if needed.
-
-## How the course will run
-The course will take place virtually in Zoom on Tuesday 18 April 2023, 13 - 16 h CEST, including breaks. The training will combine lectures and hands-on exercises, and participants are expected to attend the whole course.
 
 ## Trainers
 - Pablo Rodriguez Mier*

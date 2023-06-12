@@ -7,7 +7,7 @@ function check_micromamba() {
         echo "Micromamba not found, installing..."
 		curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 		./bin/micromamba shell init -s bash -p ~/micromamba
-		source ~/.bashrc
+		eval "$(cat ~/.bashrc | tail -n +10)"
     else
         echo "Micromamba is already installed"
     fi

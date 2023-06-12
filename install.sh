@@ -7,7 +7,19 @@ function check_micromamba() {
         echo "Micromamba not found, installing..."
 		curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
 		./bin/micromamba shell init -s bash -p ~/micromamba
-		eval "$(cat ~/.bashrc | tail -n +10)"
+		export MAMBA_EXE="$HOME/bin/micromamba";
+		export MAMBA_ROOT_PREFIX="$HOME/micromamba";
+		__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+		if [ $? -eq 0 ]; then
+			eval "$__mamba_setup"
+		else
+			if [ -f "$HOME/micromamba/etc/profile.d/micromamba.sh" ]; then
+				. "$HOME/micromamba/etc/profile.d/micromamba.sh"
+			else
+				export  PATH="$HOME/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
+			fi
+		fi
+		unset __mamba_setup
     else
         echo "Micromamba is already installed"
     fi

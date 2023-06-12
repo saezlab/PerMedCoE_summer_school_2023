@@ -6,10 +6,8 @@ function check_micromamba() {
     if ! command -v micromamba &> /dev/null; then
         echo "Micromamba not found, installing..."
 		curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xvj bin/micromamba
-		~/.local/bin/micromamba shell init -p "$HOME/micromamba"
-		echo 'export MAMBA_ROOT_PREFIX="$HOME/micromamba"' >> ~/.bashrc
-        echo 'export PATH="$MAMBA_ROOT_PREFIX/bin:$PATH"' >> ~/.bashrc
-        source ~/.bashrc
+		./bin/micromamba shell init -s bash -p ~/micromamba
+		source ~/.bashrc
     else
         echo "Micromamba is already installed"
     fi

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -l
+#!/usr/bin/env bash
 set -euo pipefail
 
 # Function to check if micromamba is installed

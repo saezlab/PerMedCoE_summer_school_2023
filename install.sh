@@ -37,3 +37,6 @@ pip install git+https://github.com/saezlab/omnipath.git@v1.0.7
 pip install git+https://github.com/saezlab/corneto.git@0.9.1-alpha.0
 pip install cylp==0.91.5
 pip install adjustText==0.8
+pip install jupyter-contrib-nbextensions
+jupyter contrib nbextensions install --user
+jupyter nbextension enable toc2/main
